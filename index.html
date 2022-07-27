@@ -11,6 +11,136 @@
     <script src='main.js'></script>
 </head>
     <body>
+        <div class="container mt-3">
+          <h3>Hoverable Popover</h3>
+          <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover over me</a>
+        </div>
+    <hr>
+        <div class="container mt-3">
+          <h3>Dismissible Popover</h3>
+          <a href="#" title="Dismissible popover" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Click anywhere in the document to close this popover">Click me</a>
+        </div>
+    <hr>
+      <div class="container mt-3">
+        <h3>Popover Positioning</h3>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a>
+      </div>
+    <hr>
+      <div class="container mt-3">
+        <h3>Popover Example</h3>
+        <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header" data-bs-content="Some content inside the popover">
+          Toggle popover
+        </button>
+      </div>
+    <hr>
+      <div class="container mt-3">
+        <h3>Tooltip Positioning</h3>
+        <p>The data-bs-placement attribute specifies the tooltip position.</p>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Top</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Bottom</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Left</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Right</a>
+      </div>
+    <hr>
+      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">
+        Hover over me!
+      </button>
+      <hr>
+      <div class="container mt-3">
+        <h2>Modal Scroll Example</h2>
+        <p>Click on the button to open the modal.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Open modal
+        </button>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h3>Some text to enable scrolling..</h3>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>  
+      <div class="container mt-3">
+        <h3>Responsive Fullscreen Modal Example</h3>
+        <p>The modal-fullscreen-sm-down class will display a modal that is in fullscreen below 576px.</p>
+        <p>Click the button and resize the browser window to see the effect.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+          Open modal
+        </button>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered">
+        <!-- starting from this size is problems -->
+        <!-- <div class="modal-dialog modal-fullscreen-md-down"></div> -->
+        <!-- <div class="modal-dialog modal-fullscreen-lg-down"></div> -->
+        <!-- <div class="modal-dialog modal-fullscreen-xl-down"></div> -->
+        <!-- <div class="modal-dialog modal-fullscreen-xxl-down "></div> -->
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>
+        <div class="container mt-3">
+          <h3>Fullscreen Modal Example</h3>
+          <p>Click on the button to open the fullscreen modal.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Open modal
+          </button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                Modal body..
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     <hr>
         <div class="container mt-3">
             <h3>Modal Example</h3>
@@ -21,7 +151,10 @@
         </div>
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
+          <div class="modal-dialog">
+            <!-- <div class="modal-dialog modal-sm"> -->
+              <!-- <div class="modal-dialog modal-lg"> -->
+              <!-- <div class="modal-dialog modal-xl"> -->
                 <div class="modal-content">
                 <!-- Modal Header -->
                     <div class="modal-header">
@@ -136,11 +269,11 @@
             <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
         </div>
     <hr>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+        <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Fixed bottom</a>
             </div>
-        </nav>
+        </nav> -->
         <div class="container-fluid"><br>
             <h3>Bottom Fixed Navbar</h3>
             <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
@@ -2347,7 +2480,6 @@
         <h1>My First Bootstrap Page</h1>
         <p>Resize this responsive page to see the effect!</p>
       </div>
-      
       <div class="container mt-5" id="first">
         <div class="row">
           <div class="col-sm-4">
@@ -2368,6 +2500,21 @@
         </div>
       </div> 
     <hr>
-      <a href="https://www.w3schools.com/bootstrap5/bootstrap_images.php">https://www.w3schools.com/bootstrap5/bootstrap_images.php</a>
+      <div class="container-fluid">
+        <a  class="btn btn-primary"  href="https://www.w3schools.com/bootstrap5/bootstrap_images.php">https://www.w3schools.com/bootstrap5/bootstrap_images.php</a>
+      </div>
+    <script>
+      // Initialize tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
 </body>
 </html>
