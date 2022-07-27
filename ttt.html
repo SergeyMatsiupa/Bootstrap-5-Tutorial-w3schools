@@ -9,23 +9,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-
 </head>
     <body>
-      <div class="container mt-3">
-        <h3>Tooltip Positioning</h3>
-        <p>The data-bs-placement attribute specifies the tooltip position.</p>
-        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Top</a>
-        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Bottom</a>
-        <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Left</a>
-        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Right</a>
-    </div>
-    <script>
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
-</body>
-</html>
+        <div style="position: relative; max-width: 90vw; max-height: 30vw;" data-bs-spy="scroll" data-bs-target=".navbar-scrollspy-id" data-bs-offset="50" class="overflow-auto">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="navbar-scrollspy-idf">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section1">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section2">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section3">Section 3</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+                <h1>Section 1</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+                <h1>Section 2</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+                <h1>Section 3</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, incidunt animi. Voluptas aperiam qui ducimus beatae recusandae dolor omnis, corrupti reiciendis, temporibus quas, voluptates corporis animi a odio mollitia ad perspiciatis tempora consectetur ullam porro! Animi, dolore! Amet dolor impedit hic repellat esse? Eum, nulla! Totam fugit similique hic facilis commodi? Reiciendis, ea! Earum porro necessitatibus facilis alias explicabo nostrum dolor doloremque voluptas maxime repudiandae consequuntur maiores tempore rem nesciunt ducimus temporibus, laboriosam repellat, doloribus, aliquam delectus! Ipsum necessitatibus voluptates consectetur ab quas voluptatibus minima nostrum, nisi dolor iste porro dolore et fugit aperiam exercitationem, maxime explicabo laboriosam corrupti quo.
+            </p>
+        </div>
+
